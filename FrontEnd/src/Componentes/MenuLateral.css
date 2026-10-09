@@ -1,0 +1,124 @@
+
+.menu-lateral {
+  width: 270px;
+  min-height: 100vh;
+  background: #fff7f3;
+  border-right: 1px solid #f8d9df;
+  display: flex;
+  flex-direction: column;
+  padding: 28px 16px;
+  box-sizing: border-box;
+}
+
+.menu-logo {
+  text-align: center;
+  padding: 12px 4px 30px;
+}
+
+.menu-aviao {
+  font-size: 30px;
+  color: #d83d7c;
+}
+
+.menu-logo h1 {
+  font-family: Georgia, serif;
+  font-size: 25px;
+  color: #242024;
+  margin: 10px 0;
+}
+
+.menu-logo h1 span {
+  color: #d83d7c;
+  margin-left: 5px;
+}
+
+.menu-logo p {
+  font-size: 12px;
+  color: #9a7180;
+}
+
+.menu-navegacao {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  width: 100%;
+  padding: 13px;
+  border: none;
+  border-radius: 10px;
+  background: transparent;
+  color: #41343b;
+  text-align: left;
+  font-size: 14px;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.menu-item:hover {
+  background: #f8d9df;
+}
+
+.menu-item.ativo {
+  background: #f8d9df;
+  color: #b52a64;
+  font-weight: 700;
+}
+
+.menu-item.destaque {
+  background: #d83d7c;
+  color: white;
+  font-weight: 600;
+  margin: 8px 0;
+}
+
+.menu-item.destaque:hover,
+.menu-item.destaque.ativo {
+  background: #b52a64;
+  color: white;
+}
+
+.menu-icone {
+  font-size: 20px;
+  width: 24px;
+  text-align: center;
+}
+
+.menu-rodape {
+  margin-top: auto;
+  padding-top: 30px;
+  text-align: center;
+  font-size: 12px;
+  color: #9a7180;
+}
+
+@media (max-width: 768px) {
+  .menu-lateral {
+    width: 100%;
+    min-height: auto;
+    padding: 14px;
+  }
+
+  .menu-logo {
+    padding-bottom: 15px;
+  }
+
+  .menu-navegacao {
+    flex-direction: row;
+    overflow-x: auto;
+  }
+
+  .menu-item {
+    width: auto;
+    flex-shrink: 0;
+  }
+
+  .menu-rodape {
+    display: none;
+  }
+}

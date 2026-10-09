@@ -1,0 +1,155 @@
+
+.destinos-rota {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.destinos-rota h2 {
+  margin-bottom: 0;
+}
+
+.lista-destinos {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.destino-adicionado {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 16px;
+  background: #fff7f3;
+  border: 1px solid #f8d9df;
+  border-radius: 12px;
+}
+
+.destino-numero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: #d83d7c;
+  color: white;
+  font-weight: bold;
+}
+
+.destino-dados {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  flex: 1;
+  min-width: 0;
+}
+
+.destino-dados strong {
+  font-family: Georgia, serif;
+  font-size: 18px;
+}
+
+.destino-dados span {
+  color: #78616c;
+  font-size: 13px;
+}
+
+.destino-acoes {
+  display: flex;
+  gap: 6px;
+}
+
+.destino-acoes button {
+  width: 32px;
+  height: 32px;
+  border: 1px solid #edc6d4;
+  background: white;
+  color: #b52a64;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.destino-acoes button:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.destino-acoes .remover-destino {
+  color: #bc3257;
+}
+
+.novo-destino {
+  background: #fffafb;
+  border: 1px dashed #e7afc3;
+  border-radius: 14px;
+  padding: 22px;
+}
+
+.novo-destino h3 {
+  font-family: Georgia, serif;
+  color: #b52a64;
+  margin: 0 0 20px;
+}
+
+.campos-destino {
+  display: grid;
+  grid-template-columns: 1fr 1fr 110px;
+  gap: 15px;
+}
+
+.botao-adicionar-destino {
+  background: #d83d7c;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.botao-adicionar-destino:hover {
+  background: #b52a64;
+}
+
+.destino-erro {
+  color: #b42345;
+  font-size: 13px;
+}
+
+.resumo-destinos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  border-top: 1px solid #f8d9df;
+  padding-top: 18px;
+  color: #78616c;
+  font-size: 14px;
+}
+
+.resumo-destinos strong {
+  color: #b52a64;
+}
+
+@media (max-width: 850px) {
+  .campos-destino {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .destino-adicionado {
+    flex-wrap: wrap;
+  }
+
+  .destino-acoes {
+    margin-left: auto;
+  }
+
+  .resumo-destinos {
+    flex-wrap: wrap;
+  }
+}

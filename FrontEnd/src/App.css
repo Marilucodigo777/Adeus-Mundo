@@ -1,0 +1,33 @@
+
+.app-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.conteudo-principal {
+  flex: 1;
+  min-width: 0;
+  padding: 50px;
+  background: #fffdfb;
+}
+
+.conteudo-principal h2 {
+  font-family: Georgia, serif;
+  color: #d83d7c;
+  font-size: 32px;
+}
+
+.conteudo-principal p {
+  color: #41343b;
+  line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+  .app-container {
+    flex-direction: column;
+  }
+
+  .conteudo-principal {
+    padding: 24px;
+  }
+}
